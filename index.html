@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    	<link rel="icon" type="image/svg+xml"
+    <link rel="icon" type="image/svg+xml"
 		href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E☕%3C/text%3E%3C/svg%3E" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,10 +28,9 @@
         /* Container for the heart animation and text */
         .heart-container {
             position: relative;
-            width: 350px; /* Increased size */
-            height: 350px; /* Increased size */
+            width: 350px;
+            height: 350px;
             animation: beat 1.2s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
-            /* Flexbox to center the text inside */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,11 +39,11 @@
         /* The heart shape, created with CSS */
         .heart {
             position: absolute;
-            width: 175px; /* Increased size & made square */
-            height: 175px; /* Increased size & made square */
+            width: 175px;
+            height: 175px;
             top: 87.5px;
             left: 87.5px;
-            background-color: #3b2f2f; /* A deep pink color for the heart */
+            background-color: #3b2f2f;
             transform: rotate(-45deg);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
@@ -54,20 +53,20 @@
         .heart::after {
             content: "";
             position: absolute;
-            width: 175px; /* Increased size */
-            height: 175px; /* Increased size */
+            width: 175px;
+            height: 175px;
             background-color: #3b2f2f;
             border-radius: 50%;
         }
 
         .heart::before {
-            top: -87.5px; /* Adjusted position */
+            top: -87.5px;
             left: 0;
         }
 
         .heart::after {
             top: 0;
-            left: 87.5px; /* Adjusted position */
+            left: 87.5px;
         }
 
         /* The keyframes animation for the beating effect */
@@ -95,14 +94,14 @@
         /* Styling for the text message now inside the heart */
         .message {
             font-family: 'Pacifico', cursive;
-            font-size: 2rem; /* Adjusted size to fit inside larger heart */
-            color: #ffffff; /* White text for contrast */
+            font-size: 2rem; 
+            color: #ffffff; 
             text-align: center;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
             padding: 0 1rem;
-            z-index: 10; /* Ensure text is above the heart shape */
-            position: relative; /* Position relative to the container */
-            max-width: 80%; /* Prevent text from overflowing */
+            z-index: 10; 
+            position: relative; 
+            max-width: 80%;
         }
 
         /* --- Mobile Responsive adjustments --- */
@@ -133,7 +132,7 @@
         /* For mobile phones */
         @media (max-width: 480px) {
             .heart-container {
-                width: 250px; /* Scaled down for mobile */
+                width: 250px;
                 height: 250px;
             }
 
